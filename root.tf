@@ -1,5 +1,5 @@
 module "github_aws_clients_repository" {
-  source          = "git::https://github.com/nationalarchives/da-terraform-modules//github_repositories"
+  source          = "git::https://github.com/nationalarchives/da-terraform-modules//github_repository_secrets"
   repository_name = "nationalarchives/da-aws-clients"
   secrets = {
     WORKFLOW_TOKEN    = data.aws_ssm_parameter.github_workflow_token.value
